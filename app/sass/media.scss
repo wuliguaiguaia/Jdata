@@ -1,0 +1,187 @@
+@media screen and (max-width:1150px) {
+    .main-container {
+        .middle {
+            .Date-middle {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:872px) {
+    .Jdata-add {
+        position: absolute;
+
+        // top: 0;
+        left: -240px;
+        display: none;
+
+        h1 {
+            display: block;
+        }
+    }
+
+    .main-container {
+        .left {
+            width: 97px;
+            position: absolute;
+            z-index: 999;
+
+            h1 {
+                position: relative;
+                line-height: 24px;
+                border-bottom: 0;
+
+                .icon {
+                    display: inline-block
+                }
+            }
+
+
+        }
+
+        .middle {
+            .Date-middle {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    header {
+        .Date-header {
+            .header-left {
+                [type="text"] {
+                    width: 180px;
+                }
+            }
+
+            .header-right {
+                position: relative;
+
+                .toggle_but {
+                    display: inline-block;
+                }
+
+                .toggle_con {
+                    display: none;
+                    position: absolute;
+                    top: 49px;
+                    left: 0;
+                    width: 80px;
+                    line-height: 30px;
+                    background: #333745;
+                    z-index: 9
+                }
+
+                a {
+                    font-size: 12px
+                }
+
+                li {
+                    display: block;
+                    color: #fff;
+                }
+
+                li:hover {
+                    color: red;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    nav {
+        ul.fr {
+            display: none;
+        }
+    }
+
+    .main-container {
+        .right {
+            width: 46px;
+            z-index: 999;
+
+
+            .JData-btn-group {
+
+                button {}
+            }
+
+            .Jdata-right {
+                position: absolute;
+                top: 0;
+                right: -240px;
+            }
+
+            .JData-btn-group.hide-btn-group {
+                display: block;
+                opacity: 1;
+
+                button {}
+            }
+
+            .toggle-tab-group {}
+
+            .JData-save {
+                bottom: -50px;
+
+                button {}
+            }
+        }
+    }
+}
+
+/* 媒体类型 */
+@media screen and (max-width: 960px) {
+    .content-right {
+        left: 640px;
+        /* padding-left: 20px; */
+    }
+
+}
+
+@media screen and (max-width:520px) {
+    header {
+
+        .Date-header {
+
+            .header-left {
+                .logo {
+                    display: none;
+                }
+
+                li {
+                    padding: 0 0 0 1px;
+                }
+
+                .title {
+                    display: none;
+                }
+
+                .input {
+                    margin-left: 7px;
+
+                    [type="text"] {
+                        width: 130px;
+                    }
+                }
+
+
+                .search-icon {}
+
+            }
+
+            .header-right {}
+
+            .user-pic {}
+
+        }
+    }
+
+
+
+}

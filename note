@@ -1,0 +1,77 @@
+1. 解决当“一个”div自适应“自身”的宽度时右边多出一块空白的情况
+    a>.parent{
+        background-color:#ccc;
+        min-width:960px;     //设定固定宽度，防止出现空白
+    }
+    .children{
+        max-width:990px;     //自适应  并居中,两边有间距
+        margin： 0 auto;
+    }
+    子设置最大表示一开始就占据的宽度，父设置最小表示最终的宽度不可变
+
+    b>.$('header').css('width',$('.box').width()); 
+
+    c>. 直接找子元素占据父元素的百分比
+
+2.左边内容自适应 ，右边固定  当总宽960px取消自适应
+    1>.
+    left-parent{
+        min-width:640 ;      //取消自适应
+        margin-right : 300;  //右边固定
+    }
+
+    left{
+        max-width: 700;      //必须设置内容基本宽度，居中对齐才能起效果
+        margin: 0 auto;   
+    }
+
+    right{
+        position:absolute; 
+        width:300px;           //右边固定宽度
+        right:0
+    }
+
+    @media and screen (max-width >= 960px){
+        right{
+            left:640; //与左边最小宽度一致
+        }
+    }
+    2>. width: calc(100% - 300px);
+    calc用于动态计算长度值。
+    需要注意的是，运算符前后都需要保留一个空格，例如：width: calc(100% - 10px)；
+
+    *PS：总结 自适应
+        1.不需要设定固定宽高，用 min-width, max-width:代替 , 再加一个媒体查询
+        2.js 获取相应的元素宽度
+        3.calc();
+
+3. 反相 filter: invert(%)  100%完全反向
+4. 
+5.监听 input 和 textarea输入框值的变化
+    onkeydown
+    onkeypress
+    onkeyup
+    oninput
+    onchange
+    onpropertychange
+
+    onkeydown/onkeypress/onkeyup
+    使用这三个事件监听输入框值变化，不能监听到右键的复制、粘贴、剪切的操作。
+
+    onkeydown
+    按下键盘上的任意键（不包括PrScrn键）时触发；如果一直按着键不放，则会一直触发此事件。
+
+    onkeypress
+    按下键盘上的可显示字符键（可以参考此文的键盘按键分类一节）时触发，如果一直按着键不放，则会一直触发此事件。
+
+    oninput/onpropertychange
+    上面讲到用 keydown/keypress/keyup无法监听右键粘贴复制操作，于是就有了 oninput 事件。
+
+    oninput是 HTML5的新事件，可以在输入框（ textarea, input:text/password/search等）的value值发生变化时（通过 JS修改输入值除外）立即触发，所以可以监听右键粘贴复制操作。但 IE9.0以下版本不支持，此时需要用到IE特有的 onpropertychange事件。在 Safari5.0以下版本，oninput 不支持 textarea 元素。
+
+    onpropertychange是 IE特有的事件，与 oninput不同的是，只要绑定对象的相关属性（不单 value 值）发生变化（包括 通过JS脚本来修改）都会触发此事件。
+ 
+6.  textarea  通过scrollHeight 获取滚动高度; 和自身高度一致
+
+7.  vh
+    相对于视口的高度。视口被均分为100单位的vh 

@@ -1,0 +1,41 @@
+立马去找工作！！！！！
+
+1.熟练 html5 ，css3
+2.熟练javascript 核心 DOM,BOM,Ajax,JSON
+3.熟练使用jquery，bootstrap，响应式开发
+4.熟练使用 pjax 完成页面无刷新，替换部分代码，类似于 vue 的路由功能，都是操作 hash 完成
+5.熟练使用 vue.js 全家桶:vuex、router、axios，配合 element 框架使用
+6.熟练es6基本语法，sass及stylus编译
+7.熟悉使用gulp 及 webpapck 自动化工具
+8.熟悉 node 及 npm 的 使用
+
+项目一：饿了么部分页面
+        项目描述：这是一个售卖衣服平台，仿照饿了么APP的网页版
+        使用技术：vue + stylus + eslint
+        项目总结：   1.使用数据mock，模拟后台数据
+                    2.使用flex弹性布局，css sticky footer 布局
+                    3.图标字体使用
+                    4.使用 web 存储，懒加载
+                    5.使用 vuex状态管理
+项目二：个人博客*
+        项目描述：这是一个简约大气上档次的H5个人博客
+        使用技术： vue + sass + eslint + bootstrap
+        项目总结：1.响应式的HTML5 网站 
+                 2.
+项目三：自助下单平台
+        项目描述：这是一个响应式自助下单平台
+        使用技术：jquery + bootstrap
+        项目总结：1.响应式的网站
+                 2.使用 wangeditor 富文本编译器插件
+项目四：金数据
+        项目描述：表单设计工具
+        项目技术：jquery + bootstrap + gulp + sass + eslint
+        项目总结：1.使用gulp前端自动化工具，实时监控热更新
+                 2.bootstrap响应式网站
+                 3.原生js实现前端路由与单页面应用
+                 4.编写jquery插件,实现拖拽排序功能
+                 5.eslint 进行语法及代码风格规范
+
+项目五：网易云音乐个人年度数据报告*
+       项目描述：HTML5移动端可视化数据报告
+       项目描述：webpack + html5

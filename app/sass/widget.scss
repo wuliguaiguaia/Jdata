@@ -1,0 +1,31 @@
+/* 组件 */
+/* 折叠按钮 */
+.accordion h3.ui-accordion-header{
+    margin: 5px -10px;
+    margin-top: 0;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    border:none;
+}
+
+.ui-state-active .ui-icon,
+.ui-icon, .ui-widget-content .ui-icon{
+    transform:scale(1.5 , 1.5);
+}
+
+.ui-state-active .ui-icon, .ui-button:active .ui-icon {
+    filter: invert(100%);
+}
+
+.ui-widget-content{
+    background-color: #f1f1f1;
+    border: none;
+    /* height: 100%  !important; */
+}
+.ui-accordion .ui-accordion-content{
+    padding: 0;
+    padding-bottom: 10px;
+}
+ 
+

@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/font.css">
+    <link rel="stylesheet" href="./assets/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+    <link rel="icon" type="text/css" href="./assets/images/logo.png">
+    <script src="./assets/jquery.js"></script>
+    <script src="./assets/jquery-ui/jquery-ui.js"></script>
+    <script src="./assets/kindeditor/kindeditor-all.js"></script>
+    <script src="./assets/kindeditor/lang/zh-CN.js"></script>
+    <title>金数据</title>
+</head>
+
+<body>
+    <div class="app-wrap">
+        <!-- header-start -->
+        <header>
+            <div class="Date-header container-fluid clearfix">
+                <div class="header-left fl">
+                    <div class="logo fl"><img src="./assets//images/mainlogo.png" alt=""></div>
+                    <ul class='list-inline fl'>
+                        <li class='title'><a href='/'>金数据</a></li>
+                        <li class='active nav-hock form'><a href='#/form'>表单</a></li>
+                        <li class=" nav-hock app"><a href="#/app">应用</a></li>
+                    </ul>
+                    <div class="input fl ">
+                        <input type="text">
+                        <span class='icon search-icon glyphicon glyphicon-search'></span>
+                    </div>
+                </div>
+                <div class="user-pic fr">
+                    <span class='glyphicon glyphicon-bell'></span>
+                    <div class="toggle_par fr">
+                        <div class="toggle_but">
+                            <img src="./assets/images/user.jpg" alt="">
+                            <span class="caret "></span>
+                        </div>
+                        <ul class="toggle_con dropdown">
+                            <li class="title"><a href="#">森仪</a></li>
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="#">模板中心</a></li>
+                            <li><a href="#">关注金数据</a></li>
+                            <li><a href="#">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-right fr toggle_par">
+                    <div class="fl toggle_but"><span class="glyphicon glyphicon-menu-hamburger"></span></div>
+                    <ul class='list-inline fl dropdown'>
+                        <li class="nav-hock help"><a href='#/help'>帮助</a></li>
+                        <li class="nav-hock concat"><a href='#/concat'>联系客服</a></li>
+                        <li class="nav-hock package"><a href='#/package'>套餐购买</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- header-end -->
+        <div id="form" class="hock">
+            <!-- nav -start -->
+            <nav class='form-nav'>
+                <div class="Date-nav container-fluid">
+                    <h4>员工满意度调查<span class='glyphicon glyphicon-cog'></span></h4>
+                    <ul class='list-inline fl'>
+                        <li class="overview active link-hock"><a href="#/form/overview">概述</a></li>
+                        <li class='edit  link-hock'><a href="#/form/edit">编辑</a></li>
+                        <li class="rule link-hock"><a href="#/form/rule">规则</a></li>
+                        <li class="setting link-hock"><a href="#/form/setting">设置</a></li>
+                        <li class="publish link-hock"><a href="#/form/publish">发布</a></li>
+                        <li class="data link-hock"><a href="#/form/data">数据</a></li>
+                        <li class="report link-hock"><a href="#/form/report">报表</a></li>
+                    </ul>
+                    <ul class='list-inline fr'>
+                        <li>发布表单</li>
+                        <li><input type="text" value='http://loremloermloererrrefdcxc'></li>
+                        <li><span class='glyphicon glyphicon-file'></span></li>
+                        <li><span class='glyphicon glyphicon-qrcode'></span></li>
+                        <li><span class='glyphicon glyphicon-share-alt'></span></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- nav-end -->
+            <div id="overview" class="hock">overview</div>
+            <div id="edit" class="hock">
+                <div class="main-container flex">
+                    <aside class="left sidebar toggle_par">
+                        <h1 class="toggle_but">添加字段
+                            <span class="glyphicon glyphicon-menu-hamburger icon"></span>
+                        </h1>
+                        <div class="Jdata-add">
+                            <h5 class="generalField">通用字段<span class='glyphicon glyphicon-question-sign glyphicon-help'></span></h5>
+                            <ul class="list-inline justify">
+                                <li class='singleLine-tab'><span></span>单行文字</li>
+                                <li class="multiLine-tab"><span></span>多行文字</li>
+                                <li class="singleSelect-tab"><span></span>单项选择</li>
+                                <li class="multiSelect-tab"><span></span>多项选择</li>
+                                <li><span></span>图片单选</li>
+                                <li><span></span>图片多选</li>
+                                <li><span></span>矩阵单选</li>
+                                <li><span></span>矩阵填空</li>
+                                <li><span></span>数字</li>
+                                <li><span></span>时间</li>
+                                <li class="dropDownList"><span></span>日期</li>
+                                <li><span></span>下拉框</li>
+                                <li><span></span>描述</li>
+                                <li><span></span>分页</li>
+                                <li><span></span>网址</li>
+                                <li><span></span>评分</li>
+                                <li><span></span>两级下拉框</li>
+                                <li><span></span>上传文件</li>
+                                <li><span></span>表单关联</li>
+                                <li><span></span>排序</li>
+                                <li class="justify-fix"></li>
+                            </ul>
+                            <h5 class="contactInfo">联系信息<span class='glyphicon glyphicon-question-sign glyphicon-help'></span></h5>
+                            <ul class="list-inline justify">
+                                <li><span></span>姓名</li>
+                                <li><span></span>手机</li>
+                                <li><span></span>邮箱</li>
+                                <li><span></span>地址</li>
+                                <li><span></span>地理信息</li>
+                                <li><span></span>电话</li>
+                                <li class="justify-fix"></li>
+                            </ul>
+                            <h5 class="goodsOrders">商品订单字段<span class='glyphicon glyphicon-question-sign glyphicon-help'></span></h5>
+                            <ul class="list-inline justify">
+                                <li><span></span>配置商品</li>
+                                <li><span></span>无图商品</li>
+                                <li class="justify-fix"></li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <div class='middle'>
+                        <div class="Date-middle ">
+                            <div class="bg-top"><img src="../assets/images/bg-top.png" alt=""></div>
+                            <div class='edit'>
+                                <input type="text" class="form-control" value='员工满意度调查'>
+                                <textarea id="kindEditor_demo"></textarea>
+                            </div>
+                            <div class="JData-list sort-parent">
+                                <!-- zhou -->
+                                <div class="singleLine item">
+                                    <h4>工作岗位</h4>
+                                    <input type="text" class="form-control w50p" placeholder="">
+                                </div>
+                                <div class="multiLine  item">
+                                    <h4>未命名</h4>
+                                    <textarea class="form-control" name="" id="" cols="30" rows="3"></textarea>
+                                </div>
+                                <div class="multiSelect item">
+                                    <h4>未命名</h4>
+                                    <label><input type="checkbox">选项</label><br>
+                                    <label><input type="checkbox">选项</label><br>
+                                    <label><input type="checkbox">选项</label><br>
+                                    <label><input type="checkbox">选项</label>
+                                </div>
+                                <div class="photoSingleSelect item">
+                                    <h4>未命名</h4>
+                                    <label>请在右侧面板添加图片</label>
+                                </div>
+                                <div class="photoMultiSelect item">
+                                    <h4>未命名</h4>
+                                    <label>请在右侧面板添加图片</label>
+                                </div>
+                                <div class="matrixRadio item">
+                                    <h4>未命名</h4>
+                                    <table class="">
+                                        <tr>
+                                            <th></th>
+                                            <th>选项</th>
+                                            <th>选项</th>
+                                            <th>选项</th>
+                                        </tr>
+                                        <tr class="option">
+                                            <td><label for="">题目</label></td>
+                                            <td><input type="radio"></td>
+                                            <td><input type="radio"></td>
+                                            <td><input type="radio"></td>
+                                        </tr>
+                                        <tr class="option">
+                                            <td><label for="">题目</label></td>
+                                            <td><input type="radio"></td>
+                                            <td><input type="radio"></td>
+                                            <td><input type="radio"></td>
+                                        </tr>
+                                        <tr class="option">
+                                            <td><label for="">题目</label></td>
+                                            <td><input type="radio"></td>
+                                            <td><input type="radio"></td>
+                                            <td><input type="radio"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="matrixMulti item">
+                                    <h4>未命名</h4>
+                                    <table class="">
+                                        <tr>
+                                            <th></th>
+                                            <th>选项</th>
+                                            <th>选项</th>
+                                            <th>选项</th>
+                                        </tr>
+                                        <tr class="option">
+                                            <td><label for="">题目</label></td>
+                                            <td><input type="radio"></td>
+                                            <td><input type="radio"></td>
+                                            <td><input type="radio"></td>
+                                        </tr>
+                                        <tr class="option">
+                                            <td><label for="">题目</label></td>
+                                            <td><input type="radio"></td>
+                                            <td><input type="radio"></td>
+                                            <td><input type="radio"></td>
+                                        </tr>
+                                        <tr class="option">
+                                            <td><label for="">题目</label></td>
+                                            <td><input type="radio"></td>
+                                            <td><input type="radio"></td>
+                                            <td><input type="radio"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+
+
+
+                                <!-- header -->
+                                <div class="header item">
+                                    <h4>工作 / 发展 </h4>
+                                </div>
+                                <div class="radio item">
+                                    <h4>1.在我们部门，每个人都很明确自己的工作职责，且紧密合作完成工作</h4>
+                                    <label>
+                                        <input type="radio" name="sexRadios" id="sexRadios1" value="men">
+                                        很不同意
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" name="sexRadios" id="sexRadios2" value="women">
+                                        不同意
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" name="sexRadios" id="sexRadios2" value="women">
+                                        一般
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" name="sexRadios" id="sexRadios2" value="women">
+                                        同意
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" name="sexRadios" id="sexRadios2" value="women">
+                                        非常同意
+                                    </label>
+                                </div>
+                                <!-- header -->
+                                <div class="header item">
+                                    <h4>工作环境 / 员工关系</h4>
+                                </div>
+                                <div class="radio item">
+                                    <h4>4.在我们部门，每个人都很明确自己的工作职责，且紧密合作完成工作</h4>
+                                    <label>
+                                        <input type="radio" name="sexRadios" id="sexRadios1" value="men">
+                                        很不同意
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" name="sexRadios" id="sexRadios2" value="women">
+                                        不同意
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" name="sexRadios" id="sexRadios2" value="women">
+                                        一般
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" name="sexRadios" id="sexRadios2" value="women">
+                                        同意
+                                    </label><br>
+                                    <label>
+                                        <input type="radio" name="sexRadios" id="sexRadios2" value="women">
+                                        非常同意
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="submit">
+                                <button class="btn btn-default" type="submit">提交</button>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="right sidebar toggle_par">
+                        <div class="JData-btn-group toggle-btn-group hide-btn-group toggle_but" role="group" aria-label="...">
+                            <button type="button" class="toggle-card-btn active">编辑字段</button>
+                            <button type="button" class="toggle-card-btn">表单样式</button>
+                        </div>
+                        <div class="Jdata-right">
+                            <div class="JData-btn-group toggle-btn-group " role="group" aria-label="...">
+                                <button type="button" class="toggle-card-btn active">编辑字段</button>
+                                <button type="button" class="toggle-card-btn">表单样式</button>
+                            </div>
+                            <div class="Jdata-edit  toggle-card">
+                                <!-- default -->
+                                <div class="J-edit-default">
+                                    <div>
+                                        <span class='glyphicon glyphicon-pencil'></span>
+                                        <p>没有选定的字段请添加或者选择一个字段</p>
+                                    </div>
+                                </div>
+
+                                <!-- singleLine -->
+                                <div class="J-edit-singleLine">
+                                    <h4 class="title">单行文字<span class='refresh glyphicon glyphicon-refresh fr'></span></h4>
+                                    <div class="title-group form-group caption">
+                                        <label for="title-item-slt1" class="title-item">标题<span class='title-item-icon glyphicon  glyphicon-help glyphicon-question-sign'></span></label>
+                                        <input type="text" class="form-control" id="title-item-slt1" placeholder="">
+                                    </div>
+                                    <div class="title-group form-group default">
+                                        <label for="title-item-slt2" class="title-item">默认值<span class='title-item-icon glyphicon glyphicon-help glyphicon-question-sign'></span></label>
+                                        <input type="text" class="form-control" id="title-item-slt2" placeholder="">
+                                    </div>
+                                    <div class="title-group form-group prompt">
+                                        <label for="title-item-slt3" class="title-item">提示<span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span></label>
+                                        <input type="text" class="form-control" id="title-item-slt3" placeholder="">
+                                    </div>
+
+                                    <div class=''>
+                                        <!-- toggle表示操作与被操作可见性的 元素包裹 -->
+                                        <div class="form-group toggle-a sweepYard">
+                                            <label for='desc-text' class=" ">
+                                                <input type="checkbox" aria-label="...">
+                                                <span class='click-text checklable'>微信扫码录入</span>
+                                                <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                            </label>
+                                        </div>
+                                        <div class="form-group toggle-b ">
+                                            <label for='desc-text' class=" ">
+                                                <input type="checkbox" aria-label="...">
+                                                <span class='checklable '>截取第
+                                                    <input type="number" class="w50">到第
+                                                    <input type="number" class="w50">个字符保存
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- 折叠面板 -->
+                                    <div class="accordion">
+                                        <h3>校验</h3>
+                                        <div>
+                                            <div class="check-group form-group mustWrite">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable must-write'>必须填</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                            <div class="check-group form-group norepeat">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>不能和已有数据重复</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                            <div class="check-group form-group idVerify">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>身份证号验证</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                            <div class="check-group form-group scopeLimit">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>限定填写范围</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                            <div class="check-group form-group minNum">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>最少填 <input type="number" class="w50">个字</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                            <div class="check-group form-group maxNum">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>最多填 <input type="number" class="w50">个字</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                            <div class="check-group form-group customPlan">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>自定义出错文案</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <h3>布局设置</h3>
+                                        <div>
+                                            <div class=''>
+                                                <div class="form-group toggle-a widthRatio">
+                                                    <label for='desc-text' class=" ">
+                                                        <input type="checkbox" aria-label="...">
+                                                        <span class='checklable'>宽度占整行的：
+                                                        </span>
+                                                        <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                        <select name="" id="" class="w50">
+                                                            <option value=""> </option>
+                                                            <option value="">1/4</option>
+                                                            <option value="">2/4</option>
+                                                            <option value="">3/4</option>
+                                                        </select>
+                                                    </label>
+                                                </div>
+                                                <div class="form-group toggle-b ">
+                                                    <label for='desc-text' class=" ">
+                                                        <input type="checkbox" aria-label="...">
+                                                        <span class='checklable'>新起一行</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3>其他设置</h3>
+                                        <div>
+                                            <div class="check-group form-group eleHide">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>字段隐藏</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                            <div class="check-group form-group autoComplate">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>自动填写上次内容</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fill-h30"></div>
+                                </div>
+
+                                <!-- MultiLine -->
+                                <div class="J-edit-multiLine">
+                                    <h4 class="title">多行文字<span class='refresh glyphicon glyphicon-refresh fr'></span></h4>
+                                    <div class="title-group form-group caption">
+                                        <label for="title-item-slt1" class="title-item">标题<span class='title-item-icon glyphicon  glyphicon-help glyphicon-question-sign'></span></label>
+                                        <input type="text" class="form-control" id="title-item-slt1" placeholder="">
+                                    </div>
+                                    <div class="title-group form-group default">
+                                        <label for="title-item-slt2" class="title-item">默认值<span class='title-item-icon glyphicon glyphicon-help glyphicon-question-sign'></span></label>
+                                        <input type="text" class="form-control" id="title-item-slt2" placeholder="">
+                                    </div>
+                                    <div class="title-group form-group prompt">
+                                        <label for="title-item-slt3" class="title-item">提示<span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span></label>
+                                        <input type="text" class="form-control" id="title-item-slt3" placeholder="">
+                                    </div>
+                                    <!-- 折叠面板 -->
+                                    <div class="accordion">
+                                        <h3>校验</h3>
+                                        <div>
+                                            <div class="check-group form-group mustWrite">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable must-write'>必须填</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                            <div class="check-group form-group minNum">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>最少填 <input type="number" class="w50">个字</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                            <div class="check-group form-group maxNum">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>最多填 <input type="number" class="w50">个字</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                            <div class="check-group form-group customPlan">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>自定义出错文案</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <h3>布局设置</h3>
+                                        <div>
+                                            <div class=''>
+                                                <div class="form-group toggle-a widthRatio">
+                                                    <label for='desc-text' class=" ">
+                                                        <input type="checkbox" aria-label="...">
+                                                        <span class='checklable'>宽度占整行的：
+                                                        </span>
+                                                        <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                        <select name="" id="" class="w50">
+                                                            <option value=""> </option>
+                                                            <option value="">1/4</option>
+                                                            <option value="">2/4</option>
+                                                            <option value="">3/4</option>
+                                                        </select>
+                                                    </label>
+                                                </div>
+                                                <div class="form-group toggle-b ">
+                                                    <label for='desc-text' class=" ">
+                                                        <input type="checkbox" aria-label="...">
+                                                        <span class='checklable'>新起一行</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3>其他设置</h3>
+                                        <div>
+                                            <div class="check-group form-group eleHide">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>字段隐藏</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                            <div class="check-group form-group autoComplate">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>自动填写上次内容</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fill-h30"></div>
+                                </div>
+                                <!-- dropDownLIst  -->
+                                <div class="J-edit-dropDownList">
+                                    <h4 class="title">下拉框<span class='refresh glyphicon glyphicon-refresh fr'></span></h4>
+                                    <div class="title-group form-group caption">
+                                        <label for="title-item-mlt1" class="title-item">标题<span class='title-item-icon glyphicon  glyphicon-help glyphicon-question-sign'></span></label>
+                                        <input type="text" class="form-control" id="title-item-mlt1" placeholder="">
+                                    </div>
+                                    <div class="title-group form-group">
+                                        <label for="title-item-mlt2" class="title-item">选项<span class='title-item-icon glyphicon glyphicon-help glyphicon-question-sign'></span></label>
+                                        <div class="field_choices">
+                                            <ul class="choices sortable draggable">
+                                                <li class="draggable choice-item ui-state-default   ui-widget-content ">
+                                                    <span class='eye-icon glyphicon glyphicon-eye-open'></span><input
+                                                        type="radio"><input type="text" placeholder="选项"><span class='glyphicon plue-icon glyphicon-plus-sign'></span><span
+                                                        class='glyphicon glyphicon-minus-sign delete-icon'></span><span
+                                                        class='glyphicon glyphicon-menu-hamburger resort-icon ui-widget-header'></span>
+                                                </li>
+                                            </ul>
+                                            <ol class="more-set list-inline">
+                                                <li class="add-more">添加其他</li>
+                                                <li class='const-num'>选项名额</li>
+                                                <li class='check-mod'>选项模板</li>|
+                                                <li class='more-edit'>批量编辑</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div class="title-group form-group">
+                                        <label for="title-item-mlt3" class="title-item">自定义选择默认方案<span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span></label>
+                                        <input type="text" class="form-control" id="title-item-mlt3" placeholder="">
+                                    </div>
+                                    <div class="title-group form-group prompt">
+                                        <label for="title-item-mlt3" class="title-item">提示<span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span></label>
+                                        <input type="text" class="form-control" id="title-item-mlt3" placeholder="">
+                                    </div>
+                                    <!-- 折叠面板 -->
+                                    <div class="accordion">
+                                        <h3>校验</h3>
+                                        <div>
+                                            <div class="check-group form-group mustWrite">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>必须填</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                    </span>
+                                            </div>
+                                            <div class="check-group form-group mustWrite">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>必须填</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                            <div class="check-group form-group mustWrite">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>必须填</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>布局设置</h3>
+                                    <div>
+                                        <div class="title-group form-group">
+                                            <span for="title-item-mlt3" class="title-item">排列方式<span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                            </span>
+                                            <div class="btn-group" role="group" aria-label="...">
+                                                <button type="button" class="btn btn-default">横向</button>
+                                                <button type="button" class="btn btn-default">纵向</button>
+                                            </div>
+                                        </div>
+                                        <div class='toggle'>
+                                            <!-- toggle表示操作与被操作可见性的 元素包裹 -->
+                                            <div class="title-group">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='click-text checklable'>宽度占用整行的</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>:
+                                                    <select name="" id="" class="w50">
+                                                        <option value=""> </option>
+                                                        <option value="">1/4</option>
+                                                        <option value="">2/4</option>
+                                                        <option value="">3/4</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                            <div class="title-group click-text-toggle">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable '>新起一行
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>其他设置</h3>
+                                    <div>
+                                        <div class="check-group form-group eleHide">
+                                            <label for='desc-text' class=" ">
+                                                <input type="checkbox" aria-label="...">
+                                                <span class='checklable'>字段隐藏</span>
+                                                <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                            </label>
+                                        </div>
+                                        <div class="check-group form-group mustWrite">
+                                            <label for='desc-text' class=" ">
+                                                <input type="checkbox" aria-label="...">
+                                                <span class='checklable'>必须填</span>
+                                                <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- singleSelect -->
+                                <div class="J-edit-singleSelect">
+                                    <h4 class="title">单项选择<span class='refresh glyphicon glyphicon-refresh fr'></span></h4>
+                                    <div class="title-group form-group caption">
+                                        <label for="title-item-mlt1" class="title-item">标题<span class='title-item-icon glyphicon  glyphicon-help glyphicon-question-sign'></span></label>
+                                        <input type="text" class="form-control" id="title-item-mlt1" placeholder="">
+                                    </div>
+                                    <div class="title-group form-group">
+                                        <label for="title-item-mlt2" class="title-item">选项<span class='title-item-icon glyphicon glyphicon-help glyphicon-question-sign'></span></label>
+                                        <div class="field_choices">
+                                            <ul class="choices sortable draggable ">
+                                                <li class="draggable choice-item ui-state-default  ui-widget-content ">
+                                                    <span class=' eye-icon glyphicon glyphicon-eye-open'></span><input
+                                                        type="radio"><input type="text" placeholder="选项"><span class='glyphicon plue-icon glyphicon-plus-sign'></span><span
+                                                        class='glyphicon glyphicon-minus-sign delete-icon'></span><span
+                                                        class='glyphicon glyphicon-menu-hamburger resort-icon ui-widget-header'></span>
+                                                </li>
+                                                <li class="draggable choice-item ui-state-default  ui-widget-content ">
+                                                    <span class=' eye-icon glyphicon glyphicon-eye-open'></span><input
+                                                        type="radio"><input type="text" placeholder="选项"><span class='glyphicon plue-icon glyphicon-plus-sign'></span><span
+                                                        class='glyphicon glyphicon-minus-sign delete-icon'></span><span
+                                                        class='glyphicon glyphicon-menu-hamburger resort-icon ui-widget-header'></span>
+                                                </li>
+                                                <li class="draggable choice-item ui-state-default   ui-widget-content ">
+                                                    <span class='eye-icon glyphicon glyphicon-eye-open'></span><input
+                                                        type="radio"><input type="text" placeholder="选项"><span class='glyphicon plue-icon glyphicon-plus-sign'></span><span
+                                                        class='glyphicon glyphicon-minus-sign delete-icon'></span><span
+                                                        class='glyphicon glyphicon-menu-hamburger resort-icon ui-widget-header'></span>
+                                                </li>
+                                            </ul>
+                                            <ol class="more-set list-inline">
+                                                <li class="add-more">添加其他</li>
+                                                <li class='const-num'>选项名额</li>
+                                                <li class='check-mod'>选项模板</li>|
+                                                <li class='more-edit'>批量编辑</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                    <div class="title-group form-group">
+                                        <label for="title-item-mlt3" class="title-item">自定义选择默认方案<span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span></label>
+                                        <input type="text" class="form-control" id="title-item-mlt3" placeholder="">
+                                    </div>
+                                    <div class="title-group form-group prompt">
+                                        <label for="title-item-mlt3" class="title-item">提示<span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span></label>
+                                        <input type="text" class="form-control" id="title-item-mlt3" placeholder="">
+                                    </div>
+                                    <!-- 折叠面板 -->
+                                    <div class="accordion">
+                                        <h3>校验</h3>
+                                        <div>
+                                            <div class="check-group form-group mustWrite">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>必须填</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                    </span>
+                                            </div>
+                                            <div class="check-group form-group mustWrite">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>必须填</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                            <div class="check-group form-group mustWrite">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>必须填</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                            <div class="check-group form-group mustWrite">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>必须填</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <h3>布局设置</h3>
+                                        <div>
+                                            <div class="title-group form-group">
+                                                <span for="title-item-mlt3" class="title-item">排列方式<span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </span>
+                                                <div class="btn-group" role="group" aria-label="...">
+                                                    <button type="button" class="btn btn-default">横向</button>
+                                                    <button type="button" class="btn btn-default">纵向</button>
+                                                </div>
+                                            </div>
+                                            <div class='toggle'>
+                                                <!-- toggle表示操作与被操作可见性的 元素包裹 -->
+                                                <div class="title-group">
+                                                    <label for='desc-text' class=" ">
+                                                        <input type="checkbox" aria-label="...">
+                                                        <span class='click-text checklable'>宽度占用整行的</span>
+                                                        <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>:
+                                                        <select name="" id="">
+                                                            <option value=""> </option>
+                                                            <option value="">1/4</option>
+                                                            <option value="">2/4</option>
+                                                            <option value="">3/4</option>
+                                                        </select>
+                                                    </label>
+                                                </div>
+                                                <div class="title-group click-text-toggle">
+                                                    <label for='desc-text' class=" ">
+                                                        <input type="checkbox" aria-label="...">
+                                                        <span class='checklable '>新起一行
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3>其他设置</h3>
+                                        <div>
+                                            <div class="check-group form-group eleHide">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>字段隐藏</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                            <div class="check-group form-group mustWrite">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>必须填</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="fill-h30"></div>
+                                </div>
+
+                                <!-- MultiSelect -->
+                                <div class="J-edit-multiSelect">
+                                    <h4 class="title">多项选择<span class='refresh glyphicon glyphicon-refresh fr'></span></h4>
+                                    <div class="title-group form-group caption">
+                                        <label for="title-item-mlt1" class="title-item">标题<span class='title-item-icon glyphicon  glyphicon-help glyphicon-question-sign'></span></label>
+                                        <input type="text" class="form-control" id="title-item-mlt1" placeholder="">
+                                    </div>
+                                    <div class="title-group form-group">
+                                        <label for="title-item-mlt2" class="title-item">选项<span class='title-item-icon glyphicon glyphicon-help glyphicon-question-sign'></span></label>
+                                        <div class="field_choices">
+                                            <ul class="choices sortable draggable ">
+                                                <li class="draggable choice-item ui-state-default  ui-widget-content ">
+                                                    <span class=' eye-icon glyphicon glyphicon-eye-open'></span><input
+                                                        type="radio"><input type="text" placeholder="选项"><span class='glyphicon plue-icon glyphicon-plus-sign'></span><span
+                                                        class='glyphicon glyphicon-minus-sign delete-icon'></span><span
+                                                        class='glyphicon glyphicon-menu-hamburger resort-icon ui-widget-header'></span>
+                                                </li>
+                                                <li class="draggable choice-item ui-state-default  ui-widget-content ">
+                                                    <span class=' eye-icon glyphicon glyphicon-eye-open'></span><input
+                                                        type="radio"><input type="text" placeholder="选项"><span class='glyphicon plue-icon glyphicon-plus-sign'></span><span
+                                                        class='glyphicon glyphicon-minus-sign delete-icon'></span><span
+                                                        class='glyphicon glyphicon-menu-hamburger resort-icon ui-widget-header'></span>
+                                                </li>
+                                                <li class="draggable choice-item ui-state-default   ui-widget-content ">
+                                                    <span class='eye-icon glyphicon glyphicon-eye-open'></span><input
+                                                        type="radio"><input type="text" placeholder="选项"><span class='glyphicon plue-icon glyphicon-plus-sign'></span><span
+                                                        class='glyphicon glyphicon-minus-sign delete-icon'></span><span
+                                                        class='glyphicon glyphicon-menu-hamburger resort-icon ui-widget-header'></span>
+                                                </li>
+                                            </ul>
+                                            <ol class="more-set list-inline">
+                                                <li class="add-more">添加其他</li>
+                                                <li class='const-num'>选项名额</li>
+                                                <li class='check-mod'>选项模板</li>|
+                                                <li class='more-edit'>批量编辑</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+
+                                    <div class="title-group form-group prompt">
+                                        <label for="title-item-mlt3" class="title-item">提示<span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span></label>
+                                        <input type="text" class="form-control" id="title-item-mlt3" placeholder="">
+                                    </div>
+                                    <!-- 折叠面板 -->
+                                    <div class="accordion">
+                                        <h3>校验</h3>
+                                        <div>
+                                            <div class="check-group form-group mustWrite">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>必须填</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                    </span>
+                                            </div>
+                                            <div class="check-group form-group mustWrite">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>必须填</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                            <div class="check-group form-group mustWrite">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>必须填</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                            <div class="check-group form-group mustWrite">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>必须填</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <h3>布局设置</h3>
+                                        <div>
+                                            <div class="title-group form-group">
+                                                <span for="title-item-mlt3" class="title-item">排列方式<span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </span>
+                                                <div class="btn-group" role="group" aria-label="...">
+                                                    <button type="button" class="btn btn-default">横向</button>
+                                                    <button type="button" class="btn btn-default">纵向</button>
+                                                </div>
+                                            </div>
+                                            <div class="check-group form-group">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>自定义选择默认方案</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span><input
+                                                        type="text" class="form-control" id="title-item-mlt3"
+                                                        placeholder="">
+                                                </label>
+                                            </div>
+                                            <div class='toggle'>
+                                                <!-- toggle表示操作与被操作可见性的 元素包裹 -->
+                                                <div class="title-group">
+                                                    <label for='desc-text' class=" ">
+                                                        <input type="checkbox" aria-label="...">
+                                                        <span class='click-text checklable'>宽度占用整行的</span>
+                                                        <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>:
+                                                        <select name="" id="">
+                                                            <option value=""> </option>
+                                                            <option value="">1/4</option>
+                                                            <option value="">2/4</option>
+                                                            <option value="">3/4</option>
+                                                        </select>
+                                                    </label>
+                                                </div>
+                                                <div class="title-group click-text-toggle">
+                                                    <label for='desc-text' class=" ">
+                                                        <input type="checkbox" aria-label="...">
+                                                        <span class='checklable '>新起一行
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3>其他设置</h3>
+                                        <div>
+                                            <div class="check-group form-group eleHide">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>字段隐藏</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                            <div class="check-group form-group mustWrite">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>必须填</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="fill-h30"></div>
+                                </div>
+
+                                <!-- photoSingleSelect -->
+                                <div class="J-edit-photoSingleSelect">
+                                    <h4 class="title">图片单选<span class='refresh glyphicon glyphicon-refresh fr'></span></h4>
+                                    <div class="title-group form-group caption">
+                                        <label for="title-item-mlt1" class="title-item">标题<span class='title-item-icon glyphicon  glyphicon-help glyphicon-question-sign'></span></label>
+                                        <input type="text" class="form-control" id="title-item-mlt1" placeholder="">
+                                    </div>
+                                    <div class="title-group form-group">
+                                        <div class="field_choices">
+                                            <ul class="choices sortable draggable ">
+                                                <li class="draggable choice-item ui-state-default  ui-widget-content  ">
+                                                    <span class=' eye-icon glyphicon glyphicon-eye-open'></span>
+                                                    <div class='inline-block'>
+                                                        <input type="radio">
+                                                        <div class="img-choice inline-block">
+                                                            <img src="C:\Users\zyl\Pictures\婚纱\12.jpg" class='imgLoadScan'
+                                                                alt="">
+                                                            <span class='glyphicon glyphicon-pencil'></span>
+                                                        </div>
+                                                        <textarea name="" id="" cols="16" contenteditable="true"></textarea>
+                                                        <span class='glyphicon glyphicon-minus-sign delete-icon'></span><span
+                                                            class='glyphicon glyphicon-menu-hamburger resort-icon ui-widget-header my-hover-state'></span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="photoPlus">
+                                                <span class='icon-load glyphicon glyphicon-download-alt'></span><br>
+                                                <span>点此添加或拖动至此，一次至多5张</span>
+                                                <input type="file" id='imgLoad' accept="image/png,image/gif,image/jpg,image/jpeg"
+                                                    Multiiple="Multiiple">
+                                            </div>
+                                            <div class="setNum">
+                                                <span class='fr'>选项名额</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="title-group form-group prompt">
+                                        <label for="title-item-mlt3" class="title-item">提示<span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span></label>
+                                        <input type="text" class="form-control" id="title-item-mlt3" placeholder="">
+                                    </div>
+                                    <!-- 折叠面板 -->
+                                    <div class="accordion">
+                                        <h3>校验</h3>
+                                        <div>
+                                            <div class="check-group form-group mustWrite">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>必须填</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                    </span>
+                                            </div>
+                                            <div class="check-group form-group">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>自定义选择默认方案</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span><input
+                                                        type="text" class="form-control" id="title-item-mlt3"
+                                                        placeholder="">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <h3>布局设置</h3>
+                                        <div>
+                                            <div class="title-group form-group">
+                                                <span for="title-item-mlt3" class="title-item">排列方式<span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </span>
+                                                <div class="btn-group" role="group" aria-label="...">
+                                                    <button type="button" class="btn btn-default">横向</button>
+                                                    <button type="button" class="btn btn-default">纵向</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3>其他设置</h3>
+                                        <div>
+                                            <div class="check-group form-group eleHide">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>字段隐藏</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                            <div class="check-group form-group mustWrite">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>必须填</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="fill-h30"></div>
+                                </div>
+
+                                <!-- photoMultiSelect -->
+                                <div class="J-edit-photoMultiSelect">
+                                    <h4 class="title">图片多选<span class='refresh glyphicon glyphicon-refresh fr'></span></h4>
+                                    <div class="title-group form-group caption">
+                                        <label for="title-item-mlt1" class="title-item">标题<span class='title-item-icon glyphicon  glyphicon-help glyphicon-question-sign'></span></label>
+                                        <input type="text" class="form-control" id="title-item-mlt1" placeholder="">
+                                    </div>
+                                    <div class="title-group form-group">
+                                        <div class="field_choices">
+                                            <ul class="choices sortable draggable ">
+                                                <li class="draggable choice-item ui-state-default  ui-widget-content  ">
+                                                    <span class=' eye-icon glyphicon glyphicon-eye-open'></span>
+                                                    <div class='inline-block'>
+                                                        <input type="radio">
+                                                        <div class="img-choice inline-block">
+                                                            <img src="C:\Users\zyl\Pictures\婚纱\12.jpg" class='imgLoadScan'
+                                                                alt="">
+                                                            <span class='glyphicon glyphicon-pencil'></span>
+                                                        </div>
+                                                        <textarea name="" id="" cols="16" contenteditable="true"></textarea>
+                                                        <span class='glyphicon glyphicon-minus-sign delete-icon'></span><span
+                                                            class='glyphicon glyphicon-menu-hamburger resort-icon ui-widget-header my-hover-state'></span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="photoPlus">
+                                                <span class='icon-load glyphicon glyphicon-download-alt'></span><br>
+                                                <span>点此添加或拖动至此，一次至多5张</span>
+                                                <input type="file" id='imgLoad' accept="image/png,image/gif,image/jpg,image/jpeg"
+                                                    Multiiple="Multiiple">
+                                            </div>
+                                            <div class="setNum">
+                                                <span class='fr'>选项名额</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="title-group form-group prompt">
+                                        <label for="title-item-mlt3" class="title-item">提示<span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span></label>
+                                        <input type="text" class="form-control" id="title-item-mlt3" placeholder="">
+                                    </div>
+                                    <!-- 折叠面板 -->
+                                    <div class="accordion">
+                                        <h3>校验</h3>
+                                        <div>
+                                            <div class="check-group form-group mustWrite">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>必须填</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                    </span>
+                                            </div>
+                                            <div class="check-group form-group">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>自定义选择默认方案</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span><input
+                                                        type="text" class="form-control" id="title-item-mlt3"
+                                                        placeholder="">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <h3>布局设置</h3>
+                                        <div>
+                                            <div class="title-group form-group">
+                                                <span for="title-item-mlt3" class="title-item">排列方式<span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </span>
+                                                <div class="btn-group" role="group" aria-label="...">
+                                                    <button type="button" class="btn btn-default">横向</button>
+                                                    <button type="button" class="btn btn-default">纵向</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h3>其他设置</h3>
+                                        <div>
+                                            <div class="check-group form-group eleHide">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>字段隐藏</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                            <div class="check-group form-group mustWrite">
+                                                <label for='desc-text' class=" ">
+                                                    <input type="checkbox" aria-label="...">
+                                                    <span class='checklable'>必须填</span>
+                                                    <span class='title-item-icon glyphicon  glyphicon-help  glyphicon-question-sign'></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="fill-h30"></div>
+                                </div>
+
+                                <!-- toggle-tab -->
+                                <div class="toggle-tab"></div>
+                            </div>
+                            <div class="Jdata-style  toggle-card">
+                                style
+                            </div>
+                            <div class="JData-save toggle-btn-group  jus-around">
+                                <button type="button" class="">添加字段</button>
+                                <button type="button" class="active">保存菜单</button>
+                            </div>
+                        </div>
+                    </aside>
+                    <section id="template">
+                        <div class="singleLine item" data-type="singleLine">
+                            <h4>未命名</h4>
+                            <input type="text" class="form-control w50p" placeholder="">
+                        </div>
+                        <div class="multiLine  item">
+                            <h4>未命名</h4>
+                            <textarea class="form-control" name="" id="" cols="30" rows="3"></textarea>
+                        </div>
+                        <div class="singleSelect item">
+                            <h4>未命名</h4>
+                            <label><input type="radio">选项</label><br>
+                            <label><input type="radio">选项</label>
+                        </div>
+                        <div class="multiSelect item">
+                            <h4>未命名</h4>
+                            <label><input type="checkbox">选项</label><br>
+                            <label><input type="checkbox">选项</label><br>
+                            <label><input type="checkbox">选项</label><br>
+                            <label><input type="checkbox">选项</label>
+                        </div>
+                        <div class="dropDownList item">
+                            <h4>未命名</h4>
+                            <select name="" id="">
+                                <option value="">选项</option>
+                                <option value="">选项</option>
+                                <option value="">选项</option>
+                                <option value="">选项</option>
+                            </select>
+                        </div>
+                        <div class="photoSingleSelect item">
+                            <h4>未命名</h4>
+                            <label>请在右侧面板添加图片</label>
+                        </div>
+                        <div class="photoMultiSelect item">
+                            <h4>未命名</h4>
+                            <label>请在右侧面板添加图片</label>
+                        </div>
+                        <div class="matrixRadio item">
+                            <h4>未命名</h4>
+                            <table class="">
+                                <tr>
+                                    <th></th>
+                                    <th>选项</th>
+                                    <th>选项</th>
+                                    <th>选项</th>
+                                </tr>
+                                <tr class="option">
+                                    <td><label for="">题目</label></td>
+                                    <td><input type="radio"></td>
+                                    <td><input type="radio"></td>
+                                    <td><input type="radio"></td>
+                                </tr>
+                                <tr class="option">
+                                    <td><label for="">题目</label></td>
+                                    <td><input type="radio"></td>
+                                    <td><input type="radio"></td>
+                                    <td><input type="radio"></td>
+                                </tr>
+                                <tr class="option">
+                                    <td><label for="">题目</label></td>
+                                    <td><input type="radio"></td>
+                                    <td><input type="radio"></td>
+                                    <td><input type="radio"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="matrixMulti item">
+                            <h4>未命名</h4>
+                            <table class="">
+                                <tr>
+                                    <th></th>
+                                    <th>选项</th>
+                                    <th>选项</th>
+                                    <th>选项</th>
+                                </tr>
+                                <tr class="option">
+                                    <td><label for="">题目</label></td>
+                                    <td><input type="radio"></td>
+                                    <td><input type="radio"></td>
+                                    <td><input type="radio"></td>
+                                </tr>
+                                <tr class="option">
+                                    <td><label for="">题目</label></td>
+                                    <td><input type="radio"></td>
+                                    <td><input type="radio"></td>
+                                    <td><input type="radio"></td>
+                                </tr>
+                                <tr class="option">
+                                    <td><label for="">题目</label></td>
+                                    <td><input type="radio"></td>
+                                    <td><input type="radio"></td>
+                                    <td><input type="radio"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div id="rule" class="hock">rule</div>
+            <div id="setting" class="hock">seeting</div>
+            <div id="publish" class="hock">publish</div>
+            <div id="data" class="hock">data</div>
+            <div id="report" class="hock">report</div>
+        </div>
+        <div id="app" class="hock">
+            app
+        </div>
+        <div id="help" class="hock">
+            help
+        </div>
+        <div id="concat" class="hock">
+            concat
+        </div>
+        <div id="package" class="hock">
+            package
+        </div>
+    </div>
+    <script src="./dist/js/main.js"></script>
+</body>
+
+</html>
