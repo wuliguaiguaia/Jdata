@@ -10,7 +10,7 @@ import run from "run-sequence";
 import del from "del";
 import combiner from "stream-combiner2";
 import browserSync from "browser-sync";
-import webpackStream from "webpack-stream";
+import webpackStream from "webpack-stream"; //配合webpack
 
 
 const file = {
